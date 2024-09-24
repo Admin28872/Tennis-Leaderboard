@@ -7,53 +7,42 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Tennis Leaderboard</h1>
-        <table id="leaderboard">
+    <h1>Tennis Leaderboard</h1>
+
+    <!-- Leaderboard Display -->
+    <div id="leaderboard">
+        <h2>Rankings</h2>
+        <table id="rankingTable">
             <thead>
                 <tr>
+                    <th>Rank</th>
                     <th>Player</th>
                     <th>Games Played</th>
                     <th>Games Won</th>
-                    <th>Win Percentage</th>
+                    <th>Win %</th>
                 </tr>
             </thead>
-            <tbody>
-                <!-- Player rows will be dynamically populated by script.js -->
+            <tbody id="leaderboardBody">
             </tbody>
         </table>
-        <button onclick="addNewPlayer()">Add New Player</button>
-        <div>
-            <label for="playerSelect">Select Player:</label>
-            <select id="playerSelect"></select>
-            <input type="number" id="gamesPlayedInput" placeholder="Games Played">
-            <input type="number" id="gamesWonInput" placeholder="Games Won">
-            <button onclick="updatePlayerStats()">Update Stats</button>
-        </div>
     </div>
 
-    <!-- Firebase SDK -->
-    <script type="module">
-        // Import Firebase app and Firestore
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
-        import { getFirestore, collection, doc, setDoc, updateDoc, onSnapshot, increment, getDoc } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js";
+    <!-- Player Stats Input Form -->
+    <div id="playerInput">
+        <h2>Update Stats</h2>
+        <select id="playerSelect">
+            <option value="">--Select Player--</option>
+        </select>
+        <input type="number" id="gamesPlayed" placeholder="Games Played">
+        <input type="number" id="gamesWon" placeholder="Games Won">
+        <button onclick="updatePlayerStats()">Update</button>
+        <button onclick="addNewPlayer()">Add New Player</button>
+    </div>
 
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyDXWQcdlBi_Wavo4GOKs6vX0h15jmf9AeA",
-            authDomain: "tennis-leaderboard-13ad8.firebaseapp.com",
-            projectId: "tennis-leaderboard-13ad8",
-            storageBucket: "tennis-leaderboard-13ad8.appspot.com",
-            messagingSenderId: "639496353373",
-            appId: "1:639496353373:web:2d7d947cbf336f4b00ffb4"
-        };
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const db = getFirestore(app);
-    </script>
-
-    <!-- Link to external JavaScript file -->
+    <!-- Firebase Integration -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
