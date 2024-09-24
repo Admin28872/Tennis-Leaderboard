@@ -47,3 +47,15 @@ input {
 h2 {
     margin-top: 20px;
 }
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    #leaderboard {
+        width: 90%;  /* Adjust width to be narrower for mobile */
+        margin: 20px auto;  /* Centering the leaderboard */
+    }
+
+    input {
+        width: 80%;  /* Make input fields wider on mobile */
+    }
+}
