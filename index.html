@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Leaderboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Tennis Leaderboard</h1>
+
+    <!-- Leaderboard Display -->
+    <div id="leaderboard">
+        <h2>Rankings</h2>
+        <table id="rankingTable">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Player</th>
+                    <th>Games Played</th>
+                    <th>Games Won</th>
+                    <th>Win %</th>
+                </tr>
+            </thead>
+            <tbody id="leaderboardBody">
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Player Stats Input Form -->
+    <div id="playerInput">
+        <h2>Update Stats</h2>
+        <select id="playerSelect">
+            <option value="">--Select Player--</option>
+        </select>
+        <input type="number" id="gamesPlayed" placeholder="Games Played">
+        <input type="number" id="gamesWon" placeholder="Games Won">
+        <button onclick="updatePlayerStats()">Update</button>
+        <button onclick="addNewPlayer()">Add New Player</button>
+    </div>
+
+    <!-- Firebase Integration -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
