@@ -1,5 +1,5 @@
 // Firebase Configuration (add your own Firebase config here)
-var firebaseConfig = {
+const firebaseConfig = {
     apiKey: "AIzaSyDXWQcdlBi_Wavo4GOKs6vX0h15jmf9AeA",
     authDomain: "tennis-leaderboard-13ad8.firebaseapp.com",
     projectId: "tennis-leaderboard-13ad8",
