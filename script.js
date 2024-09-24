@@ -1,12 +1,13 @@
-// Reference to Firestore
+// Firestore reference to the "players" collection
 const playersCollection = collection(db, "players");
 
-// Fetch and display leaderboard
+// Fetch and display leaderboard data in real-time
 function fetchLeaderboard() {
     const leaderboardTable = document.querySelector("#leaderboard tbody");
     leaderboardTable.innerHTML = ''; // Clear the table before updating
 
     onSnapshot(playersCollection, (snapshot) => {
+        leaderboardTable.innerHTML = ''; // Clear the table again to avoid duplicates
         snapshot.docs.forEach((doc) => {
             const playerData = doc.data();
             const playerRow = `
@@ -22,24 +23,25 @@ function fetchLeaderboard() {
     });
 }
 
-// Add new player to Firestore
+// Add a new player to Firestore
 function addNewPlayer() {
     const playerName = prompt("Enter new player's name:");
     if (playerName) {
-        setDoc(doc(playersCollection, playerName), {
+        const playerRef = doc(playersCollection, playerName);
+        setDoc(playerRef, {
             name: playerName,
             gamesPlayed: 0,
             gamesWon: 0,
             winPercentage: 0
         }).then(() => {
-            fetchLeaderboard();
+            fetchLeaderboard(); // Refresh the leaderboard after adding a new player
         }).catch((error) => {
             console.error("Error adding player: ", error);
         });
     }
 }
 
-// Update player stats
+// Update player stats (games played and games won)
 function updatePlayerStats() {
     const playerSelect = document.getElementById("playerSelect");
     const gamesPlayedInput = document.getElementById("gamesPlayedInput").value;
@@ -65,17 +67,19 @@ function updatePlayerStats() {
     }
 }
 
-// Recalculate win percentage for a player
+// Recalculate and update player's win percentage
 function recalculateWinPercentage(playerName) {
     const playerRef = doc(playersCollection, playerName);
 
-    getDoc(playerRef).then((doc) => {
-        if (doc.exists()) {
-            const data = doc.data();
+    getDoc(playerRef).then((docSnap) => {
+        if (docSnap.exists()) {
+            const data = docSnap.data();
             const winPercentage = data.gamesPlayed > 0 ? data.gamesWon / data.gamesPlayed : 0;
 
             updateDoc(playerRef, {
                 winPercentage: winPercentage
+            }).then(() => {
+                fetchLeaderboard(); // Refresh the leaderboard after updating stats
             });
         }
     }).catch((error) => {
@@ -83,12 +87,12 @@ function recalculateWinPercentage(playerName) {
     });
 }
 
-// Populate the player dropdown for selecting a player
+// Populate the player dropdown with names from Firestore
 function populatePlayerSelect() {
     const playerSelect = document.getElementById("playerSelect");
 
     onSnapshot(playersCollection, (snapshot) => {
-        playerSelect.innerHTML = ''; // Clear the dropdown before updating
+        playerSelect.innerHTML = ''; // Clear the dropdown
         snapshot.docs.forEach((doc) => {
             const playerData = doc.data();
             const option = document.createElement("option");
@@ -99,6 +103,6 @@ function populatePlayerSelect() {
     });
 }
 
-// Call fetchLeaderboard and populatePlayerSelect when page loads
+// Initial load: fetch the leaderboard and populate player selection dropdown
 fetchLeaderboard();
 populatePlayerSelect();
