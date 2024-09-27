@@ -2,10 +2,10 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-image: url('https://raw.githubusercontent.com/Admin28872/Tennis-Leaderboard/refs/heads/main/5807a0d502f06c1c7134fef291cbc317.jpg');
-    background-size: cover; /* Ensures the image covers the screen */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevents repetition */
-    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* Allow the background to move with the page */
     color: white; /* Ensure the text contrasts well with the background */
 }
 
@@ -15,13 +15,14 @@ body {
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better text readability */
     padding: 15px;
     border-radius: 10px;
+    border: 2px solid #ddd; /* Border around the leaderboard */
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
-    color: white; /* White text for contrast against the background */
+    color: white;
 }
 
 th, td {
@@ -43,6 +44,7 @@ button {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    border: 2px solid #ddd; /* Add border to button to match the style */
 }
 
 button:hover {
@@ -53,8 +55,10 @@ input {
     margin: 10px;
     padding: 10px;
     width: 200px;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd; /* Add border around input fields */
     border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent to blend with the background */
+    color: white; /* Ensure input text is readable */
 }
 
 h2 {
