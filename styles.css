@@ -1,64 +1,66 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f5f5f5;
-    background-image: url('/mnt/data/5807a0d502f06c1c7134fef291cbc317.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: white;  /* Adjusted text color to suit the background */
+    background-image: url('https://raw.githubusercontent.com/Admin28872/Tennis-Leaderboard/refs/heads/main/5807a0d502f06c1c7134fef291cbc317.jpg');
+    background-size: cover; /* Ensures the image covers the screen */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevents repetition */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    color: white; /* Ensure the text contrasts well with the background */
 }
 
 #leaderboard {
     margin: 20px auto;
     width: 80%;
-    background-color: rgba(0, 0, 0, 0.6);  /* Transparent black background to make text readable */
-    padding: 20px;
-    border-radius: 10px;  /* Rounded corners for a modern look */
-    color: white;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better text readability */
+    padding: 15px;
+    border-radius: 10px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
-    color: white;  /* Ensuring text is visible */
+    color: white; /* White text for contrast against the background */
 }
 
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent to sync with the background */
 }
 
 th {
-    background-color: rgba(76, 175, 80, 0.8);  /* Adjusted color to match the background and look better */
+    background-color: rgba(76, 175, 80, 0.9); /* Slight transparency to blend with the background */
     color: white;
 }
 
 button {
     margin-top: 10px;
     padding: 10px;
-    background-color: rgba(76, 175, 80, 0.8);  /* Match with the table header */
+    background-color: rgba(76, 175, 80, 0.9); /* Consistent with the color scheme */
     color: white;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: rgba(69, 160, 73, 0.8);
+    background-color: rgba(69, 160, 73, 0.9); /* Slight color change on hover */
 }
 
 input {
     margin: 10px;
     padding: 10px;
     width: 200px;
-    background-color: rgba(255, 255, 255, 0.8);  /* Slight transparency to fit background */
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 h2 {
     margin-top: 20px;
-    color: white;  /* Ensure header is readable against background */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);  /* Text shadow for better contrast */
+    color: white; /* Ensure the title contrasts against the background */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Slight shadow to make the text stand out */
 }
 
 /* Media Query for Mobile Devices */
@@ -66,14 +68,21 @@ h2 {
     #leaderboard {
         width: 90%;  /* Adjust width to be narrower for mobile */
         margin: 20px auto;  /* Centering the leaderboard */
-        padding: 15px;
     }
 
     input {
         width: 80%;  /* Make input fields wider on mobile */
     }
 
+    th, td {
+        font-size: 14px; /* Adjust table text size for smaller screens */
+    }
+
     h2 {
-        font-size: 1.5em;  /* Make the header slightly smaller for mobile */
+        font-size: 24px; /* Reduce the header size slightly for mobile */
+    }
+
+    button {
+        width: 100%; /* Make buttons full-width on mobile */
     }
 }
