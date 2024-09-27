@@ -64,8 +64,8 @@ input {
 h2 {
     margin-top: 20px;
     color: white;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8); /* Stronger shadow for title to match other texts */
-    font-size: 36px; /* Slightly larger font to stand out */
+    font-size: 36px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9); /* Strong shadow for the title */
 }
 
 /* Media Query for Mobile Devices */
