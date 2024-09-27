@@ -2,22 +2,20 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f5f5f5; /* Fallback color */
-    background-image: url('https://raw.githubusercontent.com/Admin28872/Tennis-Leaderboard/refs/heads/main/1d430bd17a91d63da00ef217a0127bd3.jpg'); /* Background image */
+    background-image: url('https://raw.githubusercontent.com/Admin28872/Tennis-Leaderboard/refs/heads/main/5807a0d502f06c1c7134fef291cbc317.jpg'); /* Add your background image */
     background-size: cover; /* Ensures the image covers the entire background */
     background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents tiling/repeating */
-    position: relative; /* Allows overlay positioning */
-    min-height: 100vh; /* Ensures full height coverage */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    min-height: 100vh; /* Ensures the image covers the full viewport height */
+    color: #ffffff; /* Set text color to white for better visibility on the background */
 }
 
 #leaderboard {
     margin: 20px auto;
     width: 80%;
-    position: relative; /* To ensure proper layering over the background */
-    background-color: rgba(255, 255, 255, 0.8); /* Light overlay for readability */
-    border-radius: 8px; /* Rounded corners for the leaderboard */
-    padding: 20px; /* Padding around the leaderboard */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    background-color: rgba(76, 175, 80, 0.7); /* Semi-transparent background for leaderboard */
+    border-radius: 10px; /* Rounded corners for the leaderboard */
+    padding: 20px; /* Add padding for spacing */
 }
 
 table {
@@ -32,32 +30,34 @@ th, td {
 }
 
 th {
-    background-color: #4CAF50;
+    background-color: rgba(76, 175, 80, 0.8); /* Slightly darker for the header */
     color: white;
 }
 
 button {
     margin-top: 10px;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: rgba(76, 175, 80, 0.9); /* Adjust button color */
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px; /* Rounded button corners */
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Keep hover effect */
 }
 
 input {
     margin: 10px;
     padding: 10px;
     width: 200px;
+    border-radius: 5px; /* Rounded corners for inputs */
 }
 
 h2 {
     margin-top: 20px;
-    color: #333; /* Dark text for contrast against the background */
+    color: #ffffff; /* Set heading color to white */
 }
 
 /* Media Query for Mobile Devices */
@@ -65,19 +65,10 @@ h2 {
     #leaderboard {
         width: 90%;  /* Adjust width to be narrower for mobile */
         margin: 20px auto;  /* Centering the leaderboard */
+        padding: 10px; /* Adjust padding for mobile */
     }
 
     input {
         width: 80%;  /* Make input fields wider on mobile */
-    }
-
-    h2 {
-        font-size: 1.5em; /* Adjust heading size for smaller screens */
-    }
-}
-
-@media (orientation: landscape) {
-    body {
-        background-size: cover; /* Maintain cover in landscape */
     }
 }
