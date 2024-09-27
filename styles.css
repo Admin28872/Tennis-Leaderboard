@@ -5,8 +5,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Keep the background fixed in place */
-    color: white;
+    background-attachment: scroll; /* Allow the background to move with the page */
+    color: white; /* Ensure the text contrasts well with the background */
 }
 
 #leaderboard {
@@ -63,9 +63,8 @@ input {
 
 h2 {
     margin-top: 20px;
-    color: white;
-    font-size: 36px;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9); /* Strong shadow for the title */
+    color: white; /* Ensure the title contrasts against the background */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Slight shadow to make the text stand out */
 }
 
 /* Media Query for Mobile Devices */
