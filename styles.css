@@ -1,59 +1,67 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f5f5f5;
-    background-image: url('https://raw.githubusercontent.com/Admin28872/Tennis-Leaderboard/refs/heads/main/607bfe209bcfc0d7e00dc005b857dec3.jpg');
+    background-image: url('/mnt/data/607bfe209bcfc0d7e00dc005b857dec3.jpg');  /* Use the image you uploaded */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    color: #ffffff; /* White text to contrast with dark background */
 }
 
 #leaderboard {
     margin: 20px auto;
     width: 80%;
-    background-color: rgba(255, 255, 255, 0.8); /* Ensure readability with a semi-transparent white background */
-    padding: 20px; /* Added some padding for visual appeal */
-    border-radius: 10px; /* Rounded corners for better appearance */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black for better text readability */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners for a modern look */
+    border: none; /* Removed the border to make it more seamless */
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
+    color: #ffffff; /* White text inside the table */
 }
 
 th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for table rows */
 }
 
 th {
-    background-color: #4CAF50;
-    color: white;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for the header */
+    color: #ffd700; /* Gold text color to stand out and match the colors in the image */
 }
 
 button {
     margin-top: 10px;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #8a2be2; /* Purple button color to match the image */
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #6a1bbd; /* Darker purple on hover for better contrast */
 }
 
 input {
     margin: 10px;
     padding: 10px;
     width: 200px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for input fields */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #000; /* Dark text inside the input fields */
 }
 
 h2 {
     margin-top: 20px;
+    color: #ffd700; /* Gold color for headings to match the background tones */
 }
 
 /* Media Query for Mobile Devices */
@@ -64,7 +72,7 @@ h2 {
 
     #leaderboard {
         width: 90%;  /* Adjust width to be narrower for mobile */
-        margin: 20px auto;  /* Centering the leaderboard */
+        margin: 20px auto;
     }
 
     input {
