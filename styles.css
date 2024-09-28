@@ -1,23 +1,31 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    background: url('https://raw.githubusercontent.com/Admin28872/Tennis-Leaderboard/refs/heads/main/5807a0d502f06c1c7134fef291cbc317.jpg') no-repeat center center fixed;
+    background-size: cover;
     background-color: #f5f5f5;
+    color: #fff; /* Change text color to make it readable on the background */
 }
 
 #leaderboard {
     margin: 20px auto;
     width: 80%;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background to make it stand out */
+    border-radius: 10px;
+    padding: 20px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent table background */
 }
 
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
+    color: #333; /* Adjust text color for readability */
 }
 
 th {
@@ -44,8 +52,16 @@ input {
     width: 200px;
 }
 
+h1, h2 {
+    color: #fff;
+}
+
 h2 {
     margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Add slight background to make it stand out */
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
 }
 
 /* Media Query for Mobile Devices */
