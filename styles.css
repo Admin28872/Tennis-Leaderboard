@@ -4,28 +4,26 @@ body {
     background: url('https://raw.githubusercontent.com/Admin28872/Tennis-Leaderboard/refs/heads/main/5807a0d502f06c1c7134fef291cbc317.jpg') no-repeat center center fixed;
     background-size: cover;
     color: white;
-    transform: scale(0.95); /* Slightly reduce the overall size */
-    transform-origin: top center; /* Ensure scaling stays centered */
 }
 
 h1 {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);  /* Dark shadow for title */
     color: white;
-    font-size: 2.5em;
+    font-size: 2.2em;  /* Reduced font size */
 }
 
 h2 {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);  /* Dark shadow for "Rankings" */
     color: white;
-    font-size: 1.8em;
+    font-size: 1.5em;  /* Reduced font size */
     margin-bottom: 10px;
 }
 
 #leaderboard {
-    margin: 20px auto;
+    margin: 15px auto;  /* Reduced margin */
     width: 80%;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid #4CAF50;
+    background-color: rgba(255, 255, 255, 0.8);  /* Slight transparency */
+    border: 1px solid #4CAF50;  /* Subtle thin border */
     padding: 10px;
     border-radius: 10px;
 }
@@ -33,15 +31,15 @@ h2 {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 15px 0;  /* Reduced margin */
 }
 
 th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    background-color: rgba(255, 255, 255, 0.9);
-    color: #333;
-    text-shadow: none;
+    border: 1px solid #ddd;  /* Thin, subtle border */
+    padding: 6px;  /* Reduced padding */
+    background-color: rgba(255, 255, 255, 0.9);  /* Slightly transparent table background */
+    color: #333;  /* Darker text for better contrast */
+    text-shadow: none;  /* No text shadow for table content */
 }
 
 th {
@@ -50,8 +48,8 @@ th {
 }
 
 button {
-    margin-top: 10px;
-    padding: 10px;
+    margin-top: 8px;  /* Reduced margin */
+    padding: 8px;  /* Reduced padding */
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -63,14 +61,14 @@ button:hover {
 }
 
 input {
-    margin: 10px;
-    padding: 10px;
-    width: 200px;
+    margin: 8px;  /* Reduced margin */
+    padding: 8px;  /* Reduced padding */
+    width: 180px;  /* Slightly reduced width */
     border: 1px solid #ddd;
 }
 
 h2 {
-    margin-top: 20px;
+    margin-top: 15px;  /* Reduced margin */
     color: white;
 }
 
@@ -78,10 +76,10 @@ h2 {
 @media (max-width: 600px) {
     #leaderboard {
         width: 90%;
-        margin: 20px auto;
+        margin: 15px auto;  /* Reduced margin */
     }
 
     input {
-        width: 80%;
+        width: 75%;  /* Adjust width for mobile */
     }
 }
