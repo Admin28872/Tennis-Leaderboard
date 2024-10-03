@@ -1,38 +1,23 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-image: url('https://raw.githubusercontent.com/Admin28872/Tennis-Leaderboard/refs/heads/main/Tennis.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: white;
-}
-
-h1, h2 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Dark outline for titles */
-    color: white;
+    background-color: #f5f5f5;
 }
 
 #leaderboard {
     margin: 20px auto;
     width: 80%;
-    background-color: rgba(255, 255, 255, 0.8); /* Light transparent background for readability */
-    border-radius: 10px;
-    padding: 10px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent */
 }
 
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
-    color: black; /* Ensures table content is clearly visible */
 }
 
 th {
@@ -47,7 +32,6 @@ button {
     color: white;
     border: none;
     cursor: pointer;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Dark outline */
 }
 
 button:hover {
@@ -58,21 +42,10 @@ input {
     margin: 10px;
     padding: 10px;
     width: 200px;
-    border: 1px solid #4CAF50; /* Green outline */
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
-    color: black;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Dark outline for better visibility */
 }
 
 h2 {
     margin-top: 20px;
-}
-
-#playerInput {
-    background-color: rgba(0, 0, 0, 0.6); /* Dark transparent background for input area */
-    border-radius: 10px;
-    padding: 20px;
-    display: inline-block;
 }
 
 /* Media Query for Mobile Devices */
