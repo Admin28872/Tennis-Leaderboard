@@ -1,23 +1,23 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-image: url('https://raw.githubusercontent.com/Admin28872/Tennis-Leaderboard/refs/heads/main/Tennis.jpg'); /* Use the background image */
-    background-size: cover; /* Make sure the image covers the entire background */
+    background-image: url('https://raw.githubusercontent.com/Admin28872/Tennis-Leaderboard/refs/heads/main/Tennis.jpg');
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    color: #ffffff; /* Change the text color to white for better contrast */
+    background-attachment: fixed;
+    color: #ffffff; /* Make text white to contrast with the background */
 }
 
 h1, h2 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Dark outline for better visibility */
-    color: #ffffff; /* Keep the text color white */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Dark outline for visibility */
+    color: #ffffff;
 }
 
 #leaderboard {
     margin: 20px auto;
     width: 80%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
-    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+    padding: 10px;
     border-radius: 10px;
 }
 
@@ -25,11 +25,13 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
+    color: #ffffff; /* Table text color */
 }
 
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
+    background-color: rgba(0, 0, 0, 0.4); /* Make cells slightly transparent */
 }
 
 th {
@@ -44,7 +46,7 @@ button {
     color: white;
     border: none;
     cursor: pointer;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Dark outline for buttons */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Dark outline */
 }
 
 button:hover {
@@ -55,14 +57,22 @@ input {
     margin: 10px;
     padding: 10px;
     width: 200px;
-    background-color: rgba(255, 255, 255, 0.9); /* Light background for inputs */
-    color: #333; /* Darker input text for contrast */
-    border: 1px solid #ddd;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Dark outline for better visibility */
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent input background */
+    border: 1px solid #4CAF50;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Dark outline for visibility */
 }
 
 h2 {
     margin-top: 20px;
+}
+
+#playerSelect {
+    background-color: rgba(255, 255, 255, 0.8); /* Input style for dropdown */
+    border: 1px solid #4CAF50;
+    padding: 10px;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* Media Query for Mobile Devices */
