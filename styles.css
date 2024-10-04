@@ -4,33 +4,34 @@ body {
     background-image: url('https://raw.githubusercontent.com/Admin28872/Tennis-Leaderboard/refs/heads/main/Tennis.jpg');
     background-size: cover;
     background-position: center;
-    margin: 0;  /* Remove extra margin */
-    padding: 0;
-    color: white; /* Default text color */
-    overflow: hidden; /* Prevent scrolling */
+    background-attachment: fixed;
+    color: #ffffff; /* Make text white to contrast with the background */
 }
 
 h1, h2 {
-    color: white; /* Text color */
-    text-shadow: 2px 2px 4px black; /* Clear and readable dark outline */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Dark outline for visibility */
+    color: #ffffff;
 }
 
 #leaderboard {
     margin: 20px auto;
     width: 80%;
-    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+    padding: 10px;
+    border-radius: 10px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
+    color: #ffffff; /* Table text color */
 }
 
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
-    color: white; /* Text color for table cells */
+    background-color: rgba(0, 0, 0, 0.4); /* Make cells slightly transparent */
 }
 
 th {
@@ -45,6 +46,7 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Dark outline */
 }
 
 button:hover {
@@ -55,20 +57,29 @@ input {
     margin: 10px;
     padding: 10px;
     width: 200px;
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent input background */
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent input background */
     border: 1px solid #4CAF50;
     color: black;
-    text-shadow: 1px 1px 2px black; /* Dark outline for input text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Dark outline for visibility */
 }
 
 h2 {
     margin-top: 20px;
 }
 
+#playerSelect {
+    background-color: rgba(255, 255, 255, 0.8); /* Input style for dropdown */
+    border: 1px solid #4CAF50;
+    padding: 10px;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
 /* Media Query for Mobile Devices */
 @media (max-width: 600px) {
     #leaderboard {
-        width: 90%;  /* Keep leaderboard centered for mobile */
+        width: 90%;  /* Adjust width to be narrower for mobile */
+        margin: 20px auto;  /* Centering the leaderboard */
     }
 
     input {
