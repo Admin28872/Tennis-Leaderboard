@@ -4,15 +4,15 @@ body {
     background-image: url('https://raw.githubusercontent.com/Admin28872/Tennis-Leaderboard/refs/heads/main/Tennis.jpg');
     background-size: cover;
     background-position: center;
-    margin: 0;  /* Remove any extra margin/padding */
+    margin: 0;  /* Remove extra margin */
     padding: 0;
-    color: white; /* Text color for readability */
+    color: white; /* Default text color */
     overflow: hidden; /* Prevent scrolling */
 }
 
 h1, h2 {
-    color: white; /* Set text color to white */
-    -webkit-text-stroke: 1px black; /* Dark outline for clear visibility */
+    color: white; /* Text color */
+    text-shadow: 2px 2px 4px black; /* Clear and readable dark outline */
 }
 
 #leaderboard {
@@ -30,7 +30,7 @@ table {
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
-    color: white; /* Make table text white */
+    color: white; /* Text color for table cells */
 }
 
 th {
@@ -55,10 +55,10 @@ input {
     margin: 10px;
     padding: 10px;
     width: 200px;
-    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent input background */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent input background */
     border: 1px solid #4CAF50;
     color: black;
-    -webkit-text-stroke: 0.5px black; /* Subtle outline for text in input boxes */
+    text-shadow: 1px 1px 2px black; /* Dark outline for input text */
 }
 
 h2 {
