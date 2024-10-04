@@ -5,33 +5,34 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: #ffffff; /* Make text white to contrast with the background */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+    color: #ffffff; /* White text for better contrast */
 }
 
 h1, h2 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Dark outline for visibility */
-    color: #ffffff;
+    color: #ffffff; /* Keep titles white for better visibility */
+    margin: 0;
+    padding: 10px 0;
 }
 
 #leaderboard {
-    margin: 20px auto;
-    width: 80%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
-    padding: 10px;
-    border-radius: 10px;
+    margin: 0 auto; /* Center the leaderboard horizontally */
+    width: 60%; /* Reduce the width for better fit */
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
-    color: #ffffff; /* Table text color */
+    color: #ffffff; /* White text for table content */
 }
 
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
-    background-color: rgba(0, 0, 0, 0.4); /* Make cells slightly transparent */
+    background-color: rgba(0, 0, 0, 0.3); /* Slight transparency to make table cells blend with background */
 }
 
 th {
@@ -46,40 +47,33 @@ button {
     color: white;
     border: none;
     cursor: pointer;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Dark outline */
 }
 
 button:hover {
     background-color: #45a049;
 }
 
-input {
+input, #playerSelect {
     margin: 10px;
     padding: 10px;
     width: 200px;
-    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent input background */
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency for input fields */
     border: 1px solid #4CAF50;
     color: black;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Dark outline for visibility */
 }
 
-h2 {
-    margin-top: 20px;
-}
-
-#playerSelect {
-    background-color: rgba(255, 255, 255, 0.8); /* Input style for dropdown */
-    border: 1px solid #4CAF50;
-    padding: 10px;
-    color: black;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+/* Ensure all content fits within one screen without scrolling */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
 }
 
 /* Media Query for Mobile Devices */
 @media (max-width: 600px) {
     #leaderboard {
-        width: 90%;  /* Adjust width to be narrower for mobile */
-        margin: 20px auto;  /* Centering the leaderboard */
+        width: 90%;  /* Narrow the leaderboard for mobile screens */
     }
 
     input {
