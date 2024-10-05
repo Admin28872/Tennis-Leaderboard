@@ -11,18 +11,16 @@ body {
 
 #leaderboard {
     margin: 20px auto;
-    width: 80%;
-    background-color: rgba(0, 0, 0, 0.7);
+    width: fit-content; /* Adjust the width to fit the table */
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 20px;
-    max-width: 700px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8); /* Adding shadow for depth */
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 th, td {
@@ -65,18 +63,8 @@ h1, h2 {
     color: white;
 }
 
-#playerInput {
-    background-color: rgba(0, 0, 0, 0.5); /* Darken background */
-    padding: 15px;
-    border-radius: 10px;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 600px;
-}
-
 h2 {
-    color: white;  /* Ensure "Update Stats" is visible */
-    text-shadow: 3px 3px 6px #000;
+    outline: 2px solid black; /* Add a dark outline around "Update Stats" for readability */
 }
 
 /* Media Query for Mobile Devices */
