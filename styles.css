@@ -14,7 +14,7 @@ body {
     width: 80%;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;  /* Added padding for spacing */
 }
 
 table {
