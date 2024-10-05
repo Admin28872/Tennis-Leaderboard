@@ -1,34 +1,30 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    background-color: #f5f5f5;
     background-image: url('https://raw.githubusercontent.com/Admin28872/Tennis-Leaderboard/refs/heads/main/Tennis.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    color: white;
-    text-shadow: 2px 2px 4px #000;
 }
 
 #leaderboard {
     margin: 20px auto;
-    width: 60%; /* Reduced width for better centering */
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 10px;
-    box-sizing: content-box;
+    border-radius: 10px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 0 auto; /* Centered the table */
+    margin: 0;
 }
 
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
-    color: white;
-    text-shadow: none;
 }
 
 th {
@@ -43,7 +39,6 @@ button {
     color: white;
     border: none;
     cursor: pointer;
-    outline: 2px solid black;
 }
 
 button:hover {
@@ -54,26 +49,33 @@ input {
     margin: 10px;
     padding: 10px;
     width: 200px;
-    background-color: rgba(255, 255, 255, 0.8);
-    outline: 2px solid black;
+    border: 2px solid black; /* Added for dark outline */
 }
 
 h1, h2 {
-    margin-top: 20px;
-    text-shadow: 3px 3px 6px #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Darker outline */
     color: white;
 }
 
-/* Specific adjustment for "Update Stats" */
-#playerInput h2 {
-    text-shadow: 3px 3px 6px black; /* Darker outline for better visibility */
+#playerInput {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+#playerSelect, input {
+    border-radius: 5px;
+    border: 2px solid black;
 }
 
 /* Media Query for Mobile Devices */
 @media (max-width: 600px) {
-    #leaderboard {
+    #leaderboard, #playerInput {
         width: 90%;
-        margin: 20px auto;
     }
 
     input {
