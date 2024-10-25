@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('https://raw.githubusercontent.com/Admin28872/Tennis-Leaderboard/refs/heads/main/Tennis.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+}
+
+#leaderboard {
+    margin: 20px auto;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    color: white;
+    text-shadow: none;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: 2px solid black;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input {
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    outline: 2px solid black;
+}
+
+h1, h2 {
+    margin-top: 20px;
+    text-shadow: 3px 3px 6px #000;
+    color: white;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    #leaderboard {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    input {
+        width: 80%;
+    }
+}
