@@ -1,18 +1,18 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-image: url('https://raw.githubusercontent.com/Admin28872/Tennis-Leaderboard/refs/heads/main/Tennis.jpg');
+    background-color: #121212;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: white;
-    text-shadow: 2px 2px 4px #000;
+    color: #e0e0e0;
+    text-shadow: none;
 }
 
 #leaderboard {
     margin: 20px auto;
     width: 80%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(40, 40, 40, 0.9);
     border-radius: 10px;
     padding: 10px;
 }
@@ -24,43 +24,43 @@ table {
 }
 
 th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #555;
     padding: 8px;
-    color: white;
-    text-shadow: none;
+    color: #e0e0e0;
 }
 
 th {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #333;
+    color: #f1f1f1;
 }
 
 button {
     margin-top: 10px;
     padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #333;
+    color: #f1f1f1;
     border: none;
     cursor: pointer;
-    outline: 2px solid black;
+    outline: 2px solid #555;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #444;
 }
 
 input {
     margin: 10px;
     padding: 10px;
     width: 200px;
-    background-color: rgba(255, 255, 255, 0.8);
-    outline: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #e0e0e0;
+    border: 1px solid #555;
+    outline: none;
 }
 
 h1, h2 {
     margin-top: 20px;
-    text-shadow: 3px 3px 6px #000;
-    color: white;
+    color: #e0e0e0;
 }
 
 /* Media Query for Mobile Devices */
