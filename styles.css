@@ -5,17 +5,16 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: #dcdcdc;
+    color: white;
     text-shadow: 2px 2px 4px #000;
 }
 
 #leaderboard {
     margin: 20px auto;
     width: 80%;
-    background-color: rgba(30, 30, 30, 0.85);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 table {
@@ -25,42 +24,43 @@ table {
 }
 
 th, td {
-    border: 1px solid #555;
+    border: 1px solid #ddd;
     padding: 8px;
-    color: #dcdcdc;
+    color: white;
+    text-shadow: none;
 }
 
 th {
-    background-color: #333;
-    color: #4CAF50;
+    background-color: #4CAF50;
+    color: white;
 }
 
 button {
     margin-top: 10px;
     padding: 10px;
-    background-color: #333;
-    color: #4CAF50;
-    border: 1px solid #4CAF50;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
     cursor: pointer;
+    outline: 2px solid black;
 }
 
 button:hover {
-    background-color: #444;
+    background-color: #45a049;
 }
 
 input {
     margin: 10px;
     padding: 10px;
     width: 200px;
-    background-color: rgba(60, 60, 60, 0.8);
-    color: #dcdcdc;
-    border: 1px solid #4CAF50;
+    background-color: rgba(255, 255, 255, 0.8);
+    outline: 2px solid black;
 }
 
 h1, h2 {
     margin-top: 20px;
     text-shadow: 3px 3px 6px #000;
-    color: #dcdcdc;
+    color: white;
 }
 
 /* Media Query for Mobile Devices */
